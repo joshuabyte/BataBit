@@ -15,6 +15,7 @@ Esta es la forma en la que el profesor acomoda estilos en cada clase, id, etique
   --black: #201e1c;
   --warm-black: #282623;
   --grey: #bababa;
+  --dark-grey: #757575;
   --off-white: #faf8f7;
   --white: #ffffff;
 }
@@ -136,3 +137,32 @@ main {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.main-exchange-container .bg-img {
+  width: 195px;
+  height: 195px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-image: url('../assets/img/Bitcoin.svg');
+  /* Good practices for images below */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-exchange-container .main-exchange-container-title h2 {
+  margin-bottom: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main-exchange-container .main-exchange-container-title p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--dark-grey);
+}
+

@@ -105,13 +105,13 @@ header img {
 }
 
 .header-btn span {
-    display: inline-block;
-    width: 12px;
-    height: 7.41px;
-    margin-left: 10px;
-    background-image: url('../assets/icons/down-arrow.svg');
-    /* vertical-align is used to align elements like "inline-block" */
-    vertical-align: middle;
+  display: inline-block;
+  width: 12px;
+  height: 7.41px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/down-arrow.svg");
+  /* vertical-align is used to align elements like "inline-block" */
+  vertical-align: middle;
 }
 
 main {
@@ -143,7 +143,7 @@ main {
   height: 195px;
   margin: 0 auto;
   margin-bottom: 40px;
-  background-image: url('../assets/img/Bitcoin.svg');
+  background-image: url("../assets/img/Bitcoin.svg");
   /* Good practices for images below */
   background-size: cover;
   background-position: center;
@@ -172,18 +172,21 @@ main {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
-  height: 220px; 
+  height: 220px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
 
 .main-currency-table .currency-table--title {
+  /* Two lines below move the "Monedas" title to the left. */
+  /* position: relative;
+  right: 48px; */
   margin-bottom: 12px;
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.344rem;
-  color: #FF9536;
+  color: #ff9536;
 }
 
 .currency-table--container {
@@ -205,7 +208,7 @@ main {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.936rem;
-  color: #B5B0AC;
+  color: #b5b0ac;
   background-color: var(--white);
 }
 
@@ -252,7 +255,7 @@ main {
   width: 11px;
   height: 6px;
   margin-left: 10px;
-  background-image: url('../assets/icons/trending-down.svg');
+  background-image: url("../assets/icons/trending-down.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -263,8 +266,28 @@ main {
   width: 11px;
   height: 6px;
   margin-left: 10px;
-  background-image: url('../assets/icons/trending-up.svg');
+  background-image: url("../assets/icons/trending-up.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.currency-table--date {
+  width: 173px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 16px;
+  /*The padding below is used to generate internal spacing in the container so that the text aligns vertically*/
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.currency-table--date p {
+  font-size: 1.2rem;
+  line-height: 1.452rem;
 }

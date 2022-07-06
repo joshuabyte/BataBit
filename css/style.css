@@ -166,7 +166,7 @@ main {
   color: var(--dark-grey);
 }
 
-/* Table styles */
+/* Currency Table styles */
 
 .main-currency-table {
   width: 70%;
@@ -201,9 +201,11 @@ main {
 .currency-table--container table {
   width: 100%;
   height: 100%;
+  /* text-align: start; */
 }
 
 .currency-table--container td {
+  /* padding-left: 20px; */
   width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
@@ -289,5 +291,110 @@ main {
 
 .currency-table--date p {
   font-size: 1.2rem;
+  line-height: 1.452rem;
+}
+
+/* Comissions table styles */
+
+.main-comissions-table {
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 220px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  font-family: "Inter", sans-serif;
+}
+
+.main-comissions-table .comissions-table--title {
+  margin-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.344rem;
+  color: var(--secondary-blue);
+}
+
+.main-comissions-table .comissions-table--container {
+  width: 90%;
+  min-width: 200px;
+  max-width: 300px;
+  height: 156px;
+  margin: 0 auto;
+}
+
+/* The styles below allow the table to take the full space stablished by the dimensions that were defined in the divs before */
+.comissions-table--container table {
+  width: 100%;
+  height: 100%;
+  /* text-align: start; */
+}
+
+.comissions-table--container td {
+  /* padding-left: 20px; */
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.936rem;
+  color: #b5b0ac;
+  background-color: var(--white); 
+}
+
+.comissions-table--container .table__top-left {
+  border-radius: 8px 0 0 0;
+  -webkit-border-radius: 8px 0 0 0;
+  -moz-border-radius: 8px 0 0 0;
+  -ms-border-radius: 8px 0 0 0;
+  -o-border-radius: 8px 0 0 0;
+}
+.comissions-table--container .table__top-right {
+  border-radius: 0 8px 0 0;
+  -webkit-border-radius: 0 8px 0 0;
+  -moz-border-radius: 0 8px 0 0;
+  -ms-border-radius: 0 8px 0 0;
+  -o-border-radius: 0 8px 0 0;
+}
+
+.comissions-table--container .table__bottom-left {
+  border-radius: 0 0 0 8px;
+  -webkit-border-radius: 0 0 0 8px;
+  -moz-border-radius: 0 0 0 8px;
+  -ms-border-radius: 0 0 0 8px;
+  -o-border-radius: 0 0 0 8px;
+}
+.comissions-table--container .table__bottom-right {
+  border-radius: 0 0 8px 0;
+  -webkit-border-radius: 0 0 8px 0;
+  -moz-border-radius: 0 0 8px 0;
+  -ms-border-radius: 0 0 8px 0;
+  -o-border-radius: 0 0 8px 0;
+}
+
+.comissions-table--container .table__right {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.694rem;
+  color: var(--dark-grey);
+}
+
+.main-comissions-table .comissions-table--date {
+  width: 173px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 16px;
+  /*The padding below is used to generate internal spacing in the container so that the text aligns vertically*/
+  padding: 8px;
+  background-color: var(--soft-blue);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.comissions-table--date p {
+  font-size: 1.2rem;
+  font-weight: 400;
   line-height: 1.452rem;
 }

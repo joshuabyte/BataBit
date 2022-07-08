@@ -16,6 +16,7 @@ Esta es la forma en la que el profesor acomoda estilos en cada clase, id, etique
   --warm-black: #282623;
   --grey: #bababa;
   --dark-grey: #757575;
+  --soft-grey: #808080;
   --off-white: #faf8f7;
   --white: #ffffff;
 }
@@ -397,4 +398,124 @@ main {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.452rem;
+}
+
+.main-product-detail {
+  /* We use position relative here so we can place the floating potato logo */
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 30px 10px;
+  background-color: var(--black);
+}
+
+.product-detail--batata-logo {
+  /* Position absolute is used for the logo itself so it will adjust to to the prior container with positon: relative */
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url('/assets/icons/batata.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.product-detail--title h2 {
+  margin-bottom: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--white);
+}
+
+.product-detail--title p {
+  margin-bottom: 32px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-grey);
+}
+
+.product-detail--card{
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 152px;
+  margin: 15px auto;
+  padding: 18px;
+  background-color: var(--warm-black);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .clock {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+  background-image: url('/assets/icons/clock.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-detail--card .eye {
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  margin-bottom: 8px;
+  background-image: url('/assets/icons/eye.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-detail--card .dollar-sign {
+  display: inline-block;
+  width: 12px;
+  height: 22px;
+  margin-bottom: 8px;
+  background-image: url('/assets/icons/dollar-sign.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-detail--card .check-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+  background-image: url('/assets/icons/check-circle.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: var(--white);
+}
+
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-grey);
 }

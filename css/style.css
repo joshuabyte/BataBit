@@ -30,6 +30,8 @@ Esta es la forma en la que el profesor acomoda estilos en cada clase, id, etique
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  /* Add property below to have a smooth scroll */
+  scroll-behavior: smooth;
 }
 
 header {
@@ -518,4 +520,56 @@ main {
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--soft-grey);
+}
+
+.bitcoin-img-container {
+  width: 100%;
+  min-height: 320px;
+  height: 50vh;
+  text-align: center;
+  background-image: url('/assets/img/bitcoinbaby4x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bitcoin-img-container h2{
+  /* Use padding-top instead of margin-top */
+  padding-top: 64px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--white);
+}
+
+.main-plans-container {
+  width: 100px;
+  min-width: 320px;
+  height: auto;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.plans--title h2 {
+  margin-bottom: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.plans--title p {
+  margin-bottom: 34px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--dark-grey);
 }

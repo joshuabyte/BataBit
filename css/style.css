@@ -591,6 +591,30 @@ main {
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
+.plans-container--card .basic, .plans-container--card .professional {
+  /* Position absolute is required to work with top and left. */
+  position: absolute;
+  width: 101px;
+  height: 31px;
+  /* To center text directily with a p tag use padding */
+  padding: 7.5px;
+  /* Use top and left to make recommended go out of the card */
+  top: -15.5px;
+  left: calc(50% - 50.5px);
+  background-color: var(--grey);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+
 .plans-container--card .recommended {
   /* Position absolute is required to work with top and left. */
   position: absolute;
@@ -651,6 +675,26 @@ main {
   color: var(--dark-grey);
 }
 
+.plan-card--cta-basic, .plan-card--cta-professional{
+  width: 150px;
+  height: 48px;
+  margin-top: 16px;
+  padding-left: 4px;
+  background-color: var(--off-white);
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
 .plan-card--cta {
   width: 150px;
   height: 48px;
@@ -671,13 +715,25 @@ main {
   color: var(--black);
 }
 
-.plan-card--cta span {
+.plan-info-container button span {
   display: inline-block;
   width: 20px;
   height: 20px;
-  vertical-align:middle;
-  background-image: url('/assets/icons/orange-right-arrow.svg');
+  vertical-align: middle;
+  background-image: url("/assets/icons/orange-right-arrow.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.plan-card--price .card__dollar-sign {
+  /* To make the dollar sign go top and not interfere with the price centering, use position absolute */
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.452rem;
+  /* top and left only work when position:absolute has been defined */
+  top: 62.5px;
+  left: calc(50% - 53px);
+}
+

@@ -580,9 +580,18 @@ main {
   height: 316px;
   padding: 0 65px 0;
   gap: 20px;
+  
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+}
+
+.plans-container--slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3.5px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
 }
 
 .plans-container--card {
@@ -749,3 +758,47 @@ main {
   left: calc(50% - 53px);
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  min-width: 320px;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer__left ul {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.footer__left {
+  margin-left: 30px;
+}
+
+.footer__left li {
+  margin: 10px 0;
+}
+
+.footer__left a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer__left a:hover {
+  text-decoration: underline;
+}
+
+.footer__right img {
+  margin-right: 50px;
+  width: 70px;
+  height: 70px;
+}

@@ -171,6 +171,24 @@ main {
 
 /* Currency Table styles */
 
+.main-tables-container {
+  display: flex;
+  padding: 0 45px;
+  align-items: center;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.main-tables-container::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3.5px;
+}
+.main-tables-container::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
+
 .main-currency-table {
   width: 70%;
   min-width: 235px;
@@ -599,7 +617,7 @@ main {
   scroll-snap-align: center;
   width: 60%;
   min-width: 190px;
-  max-width: 300px;
+  max-width: 225px;
   height: 247px;
   margin: 50px auto 0px;
   padding: 0 15px;
@@ -760,16 +778,21 @@ main {
 
 footer {
   display: flex;
+  /* Used justify-content: space-between here so the links and logo would aline to the far left and far right respectively */
+  justify-content: space-between;
   width: 100%;
   min-width: 320px;
   height: 150px;
+  padding: 40px 65px;
   background-color: var(--bitcoin-orange);
 }
 
 footer section {
-  width: 50%;
+  /* Don't need line below */
+  /* width: 50%; */
   display: flex;
-  justify-content: center;
+  /* Don't need line below */
+  /* justify-content: space-evenly; */
   align-items: center;
 }
 
@@ -778,10 +801,6 @@ footer .footer__left ul {
   font-weight: 400;
   line-height: 1.8rem;
   list-style: none;
-}
-
-.footer__left {
-  margin-left: 30px;
 }
 
 .footer__left li {
@@ -798,7 +817,9 @@ footer .footer__left ul {
 }
 
 .footer__right img {
-  margin-right: 50px;
+  /* Don't need line below */
+  /* margin-right: 50px; */
   width: 70px;
   height: 70px;
 }
+

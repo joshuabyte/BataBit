@@ -48,8 +48,8 @@ header {
 }
 
 header img {
-  width: 150px;
-  height: 24px;
+  width: 170px;
+  height: 30px;
   margin-top: 60px;
 }
 
@@ -468,6 +468,7 @@ main {
   color: var(--soft-grey);
 }
 
+
 .product-detail--card {
   width: 90%;
   min-width: 288px;
@@ -754,6 +755,16 @@ main {
   color: var(--black);
 }
 
+.plan-card--cta:hover {
+  cursor: pointer;
+  background-color: var(--soft-orange);
+}
+
+.plan-card--cta-basic:hover, .plan-card--cta-professional:hover {
+  cursor: pointer;
+  background-color:#f5f5f5;
+}
+
 .plan-info-container button span {
   display: inline-block;
   width: 20px;
@@ -819,7 +830,18 @@ footer .footer__left ul {
 .footer__right img {
   /* Don't need line below */
   /* margin-right: 50px; */
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
+.footer__signature {
+  display: none;
+}
+
+@media  (min-width: 550px) {
+  .footer__signature {
+    display: flex;
+    font-size: 1.4rem;
+    color: var(--white);
+  }
+}

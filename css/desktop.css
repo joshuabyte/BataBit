@@ -1,0 +1,12 @@
+.product-cards--container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* I was going insane because I had an overflow when giving the container the same width as the breakpoint. However the solution I found was to give the container a little less width than the breakpoint */
+    width: 1480px;
+    margin: 0 auto;
+  }
+
+  .product-detail--card {
+    margin: 0 20px;
+  }

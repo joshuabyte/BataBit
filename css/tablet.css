@@ -69,7 +69,7 @@ header img {
   display: flex;
   flex-wrap: wrap;
   /* I was going insane because I had an overflow when giving the container the same width as the breakpoint. However the solution I found was to give the container a little less width than the breakpoint */
-  width: 910px;
+  width: 900px;
   margin: 0 auto;
 }
 

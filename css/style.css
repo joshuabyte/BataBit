@@ -770,7 +770,7 @@ main {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  background-image: url("/assets/icons/orange-right-arrow.svg");
+  background-image: url("../assets/icons/orange-right-arrow.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
